@@ -23,7 +23,7 @@ export const CONTACT = {
  * Web3Forms: compilare con la access key fornita dal cliente.
  * Lasciata vuota, il modulo di contatti ripiega su mailto.
  */
-export const WEB3FORMS_ACCESS_KEY = ""; // TODO(cliente): chiave Web3Forms
+export const WEB3FORMS_ACCESS_KEY = "b2d6d883-85e1-4d93-9811-47e65cb0a9b2";
 
 /** Pagine legali fornite dal servizio di terze parti (iubenda o equivalente). Vuoto = niente link. */
 export const LEGAL_LINKS: { label: string; href: string }[] = [
