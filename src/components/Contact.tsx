@@ -3,7 +3,6 @@ import stradaMaggiore from "@/assets/strada-maggiore.jpg";
 import { CONTACT, CONTAINER, WEB3FORMS_ACCESS_KEY } from "@/lib/constants";
 import { Button, ButtonLink } from "./ui/Button";
 import { OpenStatus } from "./ui/OpenStatus";
-import { WhatsAppIcon } from "./icons";
 import { Reveal } from "./ui/motion";
 
 type Status = "idle" | "sending" | "sent" | "error";
@@ -85,16 +84,12 @@ export function Contact() {
             </Reveal>
 
             <div className="mt-12 max-w-[480px]">
-              <a
-                href={CONTACT.phoneHref}
-                className="mt-1 block font-display text-[clamp(2.5rem,4.5vw,4rem)] leading-none text-accent hover:text-ink"
-              >
-                {CONTACT.phoneDisplay}
-              </a>
-              <div className="mt-4 flex flex-wrap gap-3">
-                <ButtonLink href={CONTACT.whatsappHref} target="_blank" rel="noopener noreferrer" variant="secondary">
-                  <WhatsAppIcon className="size-5" />
-                  Scrivi su WhatsApp
+              <p className="text-lead text-body">
+                Scrivici: il primo parere è gratuito e non c'è nessun numero da cercare — solo il modulo qui sotto.
+              </p>
+              <div className="mt-6 flex flex-wrap gap-3">
+                <ButtonLink href={CONTACT.formAnchor} size="lg">
+                  Compila il modulo
                 </ButtonLink>
                 <ButtonLink href={CONTACT.emailHref} variant="quiet" className="self-center">
                   {CONTACT.email}
@@ -125,8 +120,8 @@ export function Contact() {
             </div>
           </div>
 
-          {/* Il modulo: quando riceve una chiave invia diretto, oggi ripiega su email */}
-          <form onSubmit={onSubmit} noValidate={false} className="max-w-[560px] lg:justify-self-end">
+          {/* Il modulo: è l'unico canale di contatto diretto. Con la chiave Web3Forms invia, senza ripiega su mailto. */}
+          <form id="form-contatto" onSubmit={onSubmit} noValidate={false} className="max-w-[560px] scroll-mt-24 lg:justify-self-end">
             <p className="text-small text-muted">La lettera per lo studio</p>
             <label htmlFor="f-nome" className={labelCls}>
               Nome e cognome

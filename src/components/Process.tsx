@@ -10,7 +10,7 @@ import { CONTAINER } from "@/lib/constants";
 const STEPS = [
   {
     caption: "Il primo parere",
-    desc: "Giorno 1: ci racconti il tuo condominio, in studio o al telefono. Valutiamo conti, contratti e stato dell'edificio, senza alcun impegno.",
+    desc: "Giorno 1: ci racconti il tuo condominio dal modulo di contatto o in studio. Valutiamo conti, contratti e stato dell'edificio, senza alcun impegno.",
     photo: teamStudio,
     alt: "In studio per il primo parere: l'amministratrice con i consulenti",
     spacer: 96,

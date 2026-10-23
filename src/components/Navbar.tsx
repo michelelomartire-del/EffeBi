@@ -36,10 +36,10 @@ export function Navbar() {
         </nav>
 
         <a
-          href={CONTACT.phoneHref}
+          href={CONTACT.formAnchor}
           className="ml-auto inline-flex min-h-11 items-center bg-accent px-4 text-[16px] font-medium text-accent-ink transition-colors hover:bg-ink md:ml-2 md:shrink-0"
         >
-          {CONTACT.phoneDisplay}
+          Preventivo gratuito
         </a>
 
         <button

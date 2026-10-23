@@ -1,11 +1,10 @@
 import { useEffect, useState } from "react";
 import { AnimatePresence, motion } from "framer-motion";
-import { Phone } from "lucide-react";
-import { WhatsAppIcon } from "./icons";
 import { EASE } from "./ui/motion";
 import { CONTACT } from "@/lib/constants";
 
-/** Sticky conversion bar for small screens: appears after the hero, hides near the contact form. */
+/** Sticky conversion bar for small screens: appears after the hero, hides near the contact form.
+ *  Nessuna azione telefonica: porta solo al modulo. */
 export function MobileCTA() {
   const [show, setShow] = useState(false);
 
@@ -44,23 +43,7 @@ export function MobileCTA() {
         >
           <div className="flex items-center gap-2 bg-surface2 p-2">
             <a
-              href={CONTACT.phoneHref}
-              aria-label="Chiama Studio EffeBi"
-              className="flex size-12 shrink-0 items-center justify-center bg-surface text-accent"
-            >
-              <Phone className="size-5" aria-hidden="true" />
-            </a>
-            <a
-              href={CONTACT.whatsappHref}
-              target="_blank"
-              rel="noopener noreferrer"
-              aria-label="Scrivi su WhatsApp"
-              className="flex size-12 shrink-0 items-center justify-center bg-surface text-accent"
-            >
-              <WhatsAppIcon className="size-5" />
-            </a>
-            <a
-              href="#contatti"
+              href={CONTACT.formAnchor}
               className="flex h-12 flex-1 items-center justify-center gap-2 bg-accent px-4 text-[17px] font-medium text-accent-ink active:bg-ink"
             >
               Preventivo gratuito

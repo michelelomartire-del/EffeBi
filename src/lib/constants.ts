@@ -1,9 +1,10 @@
+/**
+ * Nessun numero di telefono in chiaro sul sito: l'unico canale di contatto
+ * diretto è il modulo (ancorato a #form-contatto), integrato con Web3Forms.
+ */
 export const CONTACT = {
-  phoneDisplay: "327 080 5140",
-  phoneHref: "tel:+393270805140",
-  whatsappHref: `https://wa.me/393270805140?text=${encodeURIComponent(
-    "Buongiorno, vorrei ricevere informazioni sull'amministrazione del mio condominio."
-  )}`,
+  /** Ancora del modulo di contatto: la chiamata all'azione punta qui. */
+  formAnchor: "#form-contatto",
   email: "info@eniminds.com",
   emailHref: `mailto:info@eniminds.com?subject=${encodeURIComponent(
     "Richiesta preventivo amministrazione condominiale"
@@ -20,7 +21,7 @@ export const CONTACT = {
 
 /**
  * Web3Forms: compilare con la access key fornita dal cliente.
- * Lasciata vuota, il modulo di contatti ripiega su mailto/WhatsApp.
+ * Lasciata vuota, il modulo di contatti ripiega su mailto.
  */
 export const WEB3FORMS_ACCESS_KEY = ""; // TODO(cliente): chiave Web3Forms
 

@@ -1,4 +1,3 @@
-import { WhatsAppIcon } from "./icons";
 import { CONTACT, CONTAINER, LEGAL_LINKS, LISTINGS, RATING } from "@/lib/constants";
 
 const SITE_LINKS = [
@@ -67,14 +66,8 @@ export function Footer() {
             </p>
             <ul className="mt-8 space-y-2">
               <li>
-                <a href={CONTACT.phoneHref} className="text-body text-ink hover:text-accent">
-                  {CONTACT.phoneDisplay} · voce e WhatsApp
-                </a>
-              </li>
-              <li className="flex items-center gap-2">
-                <WhatsAppIcon className="size-4 text-accent" aria-hidden="true" />
-                <a href={CONTACT.whatsappHref} target="_blank" rel="noopener noreferrer" className="text-body text-body hover:text-ink">
-                  Scrivi su WhatsApp
+                <a href={CONTACT.formAnchor} className="text-body text-ink hover:text-accent">
+                  Scrivici dal modulo di contatto
                 </a>
               </li>
               <li>
