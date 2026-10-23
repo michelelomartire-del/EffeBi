@@ -1,0 +1,28 @@
+EFFEBI – FILE DEL LOGO
+
+Cartelle
+- stampa-pdf-cmyk/  Vettoriali in CMYK, testi convertiti in tracciati. Da dare a tipografia e insegnista.
+- svg/              Vettoriali per web, Word, PowerPoint e Canva (scalabili all'infinito).
+- png/              Immagini ad alta risoluzione con sfondo trasparente.
+- web/              Favicon, icone app, avatar social, logo per header sito e firma email.
+
+Versioni
+- orizzontale  Versione principale: usala quando puoi.
+- verticale    Insegne, targhe, formati quadrati.
+- compatto     Sotto i 30 mm o spazi stretti (senza descrittore).
+- simbolo      Solo i tre archi.
+
+Colori
+- positivo  Su fondi chiari (avorio, bianco).
+- negativo  Su fondi scuri (inchiostro #2A211C).
+- avorio    Monocolore chiaro: su terracotta o su foto scure.
+- nero      Stampa a un colore, timbri, fax.
+
+Colori del brand
+Terracotta #B4532F · CMYK 15 75 90 5
+Inchiostro #2A211C · CMYK 50 65 70 75
+Avorio     #F6F1E9 · CMYK 2 4 8 0
+Salvia     #6F7D5C · CMYK 50 30 70 15
+Sabbia     #E9DFD0 · CMYK 8 11 18 0
+
+Nota per la tipografia: i valori CMYK sono una conversione indicativa. Prima di stampare grandi tirature chiedi una prova colore o un riferimento Pantone.
